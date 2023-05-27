@@ -11,3 +11,10 @@ body {
       rgba(0, 128, 128, 1) 100%);
   text-align: center;
 }
+
+.app-title {
+  margin: 75px 0 50px;
+  color: #0ccac4;
+  font-size: 76px;
+  font-family: 'Bigelow Rules', cursive;
+}

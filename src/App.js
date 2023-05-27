@@ -45,6 +45,7 @@ class App extends Component {
               );
             }}
           > */}
+        <h1 className="app-title">My users</h1>
         <SearchBox
           onChangeHandler={onSearchChange}
           placeholder="enter user name"
