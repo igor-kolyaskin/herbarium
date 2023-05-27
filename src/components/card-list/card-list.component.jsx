@@ -1,4 +1,6 @@
 import { Component } from "react";
+import Card from "../card/card.component";
+import './card-list.styles.css'
 
 class CardList extends Component {
 
@@ -6,10 +8,11 @@ class CardList extends Component {
         const { filteredUsers } = this.props
         console.log('render from CardList')
         return (
-            <>{filteredUsers.map(({ name, id }) => <div key={id}><h1>{name}</h1></div>)}</>
+            <div className="card-list">
+                {filteredUsers.map(user => <Card user={user} />)}
+            </div >
         )
     }
-
 }
 
 export default CardList
