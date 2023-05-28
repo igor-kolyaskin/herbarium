@@ -9,7 +9,7 @@ class CardList extends Component {
         console.log('render from CardList')
         return (
             <div className="card-list">
-                {filteredUsers.map(user => <Card user={user} />)}
+                {filteredUsers.map(user => <Card user={user}  key={user.id}/>)}
             </div >
         )
     }
